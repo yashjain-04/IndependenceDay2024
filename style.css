@@ -18,8 +18,6 @@ body{
     position: absolute;
     width: 100%;
     height: 8vh;
-    /* background-color: rgba(255, 255,255, 1); */
-    /* background-color: #ff693b; */
     gap: 5px;
     font-size: 1.5rem;
     letter-spacing: 10px;
@@ -384,9 +382,6 @@ body{
 }
 
 .text-area h2{
-    /* background: -webkit-linear-gradient(#ff0f0f, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     /* text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1.2em rgb(0, 0, 0), 0 0 0.4em rgb(0, 1, 0); */
@@ -441,7 +436,6 @@ body{
 /* ------------- card section ------------------ */
 .card-section{
     height: fit-content;
-    /* background-color: green; */
     background-color: #066c0d;
     background-image: linear-gradient(225deg, #066c0d 0%, #0ca619 30%, #46d92e 66%, #c2ffb1 100%);
     padding: 0px 20px 20px 20px;
@@ -486,7 +480,6 @@ body{
 
 .card-section .cards .card h2{
     text-align: center;
-    /* text-transform: uppercase; */
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -533,11 +526,20 @@ img{
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-img:hover{
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    background-color: rgba(255, 255,255, 0.4);
-    border-radius: 20%;
+@media(max-width:450px) {
+    .card-section .cards .card h2{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media(min-width:700px){
+    img:hover{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        background-color: rgba(255, 255,255, 0.4);
+        border-radius: 20%;
+    }
 }
 
 #one{
@@ -684,10 +686,12 @@ footer{
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-.page-footer .footer-content .my-image :hover{
-    opacity: 1;
-    border-radius: 25%;
-    background-color: rgba(255, 255,255, 0.3);
+@media(min-width:700px){
+    .page-footer .footer-content .my-image :hover{
+        opacity: 1;
+        border-radius: 25%;
+        background-color: rgba(255, 255,255, 0.3);
+    }
 }
 
 .page-footer .footer-content #name{
@@ -890,38 +894,3 @@ footer{
         width: 20px;
     }
 }
-
-
-/* --------------------------------------------------------------------------- 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('images/map2.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.content {
-    position: relative;
-}
-
-header {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    text-align: center;
-}
-
-.main-content {
-    font-size: 400%;
-    font-style: italic;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 20px;
-} */
