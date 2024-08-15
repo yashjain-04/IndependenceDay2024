@@ -733,10 +733,25 @@ footer{
 }
 
 .page-footer .footer-content .social-links .leetcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 4px;
-    display: flex;
 }
+
+/* .page-footer .footer-content .social-links .linked-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.page-footer .footer-content .social-links .instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .page-footer .footer-content .social-links .leetcode .leetcode-logo{
     height: 20px;
@@ -803,16 +818,22 @@ footer{
     }
 
     .page-footer .footer-content #name{
-        font-size: 1.5rem;
+        font-size: 2.1rem;
         letter-spacing: 0.3rem;
     }
 
     .page-footer .footer-content .mail{
+        top: 3px;
         font-size: 0.8rem;
     }
 
-    .page-footer .footer-content .social-links{
+    .page-footer .footer-content .mail i{
+        position: relative;
+        top: 3px;
+        font-size: 16px;
+    }
 
+    .page-footer .footer-content .social-links{
         gap: 4px;
         flex-direction: column;
         font-size: 0.7rem;
@@ -822,9 +843,14 @@ footer{
         font-size: 20px;
     }
 
+    .page-footer .footer-content .social-links .leetcode #leetcode-link{
+        top: 10px;
+    }
+
     .page-footer .footer-content .social-links .leetcode .leetcode-logo{
         height: 20px;
         width: 20px;
+        margin-right: 3.5px;
     }
 
     .page-footer .footer-content .section{
